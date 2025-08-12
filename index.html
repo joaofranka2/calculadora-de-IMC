@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de IMC</title>   
+    
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    
+    <main id="conteiner">
+        <section id="img">
+            <img src="assets/images/ilustracao.svg" >
+        </section>
+
+        <section id="Calculadora">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - IMC
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em Kg
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-regular fa-weight-scale"></i>
+                        <input type="number" id="weight" required>
+                        <samp>
+                            kg
+                        </samp>
+                        
+                    </div>
+
+                    <div class="input-box">
+                    <label for="weight">
+                        Altura em metros 
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler-horizontal"></i>
+                        <input type="number" id="weight" required>
+                        <samp>
+                            m
+                        </samp>
+                        
+                    </div>
+                </div>
+                <button id="Calculadora">
+                        Calcular
+                </button>
+            </form>
+            <div id="infos">
+                <div id="result">
+                    <div id="bmi">
+                        <samp id="value"></samp>
+                        <samp>Seu IMC</samp>
+                    </div>
+                    <div id="description">
+                        <samp></samp>
+                    </div>
+                </div>
+                
+                <div id="more_info">
+                    <a href="https://www.horasdavida.org.br/post/obesidade-sobrepeso?gad_source=1&gad_campaignid=18452891197&gbraid=0AAAAADq_xN4MjF5cpdLSMEV2rHSwvkQh-&gclid=Cj0KCQjwzOvEBhDVARIsADHfJJTfQtIDZbgAxV97YWHFouZHqhL2bjt0sTn00SjXstLx02CmqTOXfJQaAjpXEALw_wcB"></a>
+                    mais infomaçoes sobre o IMC
+                    <i class="fa-solid fa-link"></i>
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>
